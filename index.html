@@ -214,11 +214,12 @@
   .job-stack span{color:var(--text-dim);}
   ul.job-bullets{list-style:none;}
   ul.job-bullets li{
-    position:relative; padding-left:16px; margin-bottom:7px;
+    position:relative; padding-left:18px; margin-bottom:9px;
     color:var(--text-dim); font-size:14.5px;
   }
   ul.job-bullets li::before{
-    content:'—'; position:absolute; left:0; color:var(--text-faint);
+    content:''; position:absolute; left:0; top:0.62em;
+    width:7px; height:2px; background:var(--signal-dim); border-radius:1px;
   }
 
   /* ---- projects ---- */
@@ -248,6 +249,10 @@
     padding:9px 14px; border-radius:var(--radius);
   }
   .module i{width:6px; height:6px; border-radius:50%; background:var(--signal); flex-shrink:0;}
+  .module.highlight{
+    border-color:var(--signal); color:var(--text); font-weight:600;
+    box-shadow:0 0 0 1px rgba(124,232,191,0.25);
+  }
 
   .grid2{display:grid; grid-template-columns:1fr 1fr; gap:48px;}
   .lang-list{display:flex; flex-direction:column; gap:14px;}
@@ -332,14 +337,14 @@
           <div class="tl-seg" style="left:36.3%; width:4.4%;" data-tooltip="Canon Production &amp; Printing · Software Engineer · 09/2021–01/2022"></div>
           <div class="tl-seg" style="left:49.5%; width:5.5%;" data-tooltip="Appcomm · Software Engineer &amp; PM · 09/2022–02/2023"></div>
           <div class="tl-seg" style="left:54.9%; width:5.5%;" data-tooltip="Pluxbox · Full-Stack Developer · 02/2023–07/2023"></div>
-          <div class="tl-seg" style="left:62.6%; width:5.5%;" data-tooltip="Lely B.V · Software Engineer · 09/2023–02/2024"></div>
+          <div class="tl-seg" style="left:62.6%; width:14.3%;" data-tooltip="Lely B.V · Software Engineer · 09/2023–10/2024"></div>
           <div class="tl-seg now" style="left:76.9%; width:23.1%;" data-tooltip="Easy4Pro GmbH · Software Expert · 10/2024–Present"></div>
         </div>
       </div>
       <div class="tl-row">
         <span class="tl-row-label">Education</span>
         <div class="timeline-track">
-          <div class="tl-seg edu-seg" style="left:1.1%; width:44.0%;" data-tooltip="Humber College · Business Informatics, Finance &amp; HRM · 01/2019–05/2022"></div>
+          <div class="tl-seg edu-seg" style="left:40.7%; width:4.4%;" data-tooltip="Humber College · Business Informatics, Finance &amp; HRM · 01/2022–05/2022"></div>
           <div class="tl-seg edu-seg" style="left:9.9%; width:58.2%;" data-tooltip="Fontys University · B.Sc. Informatics · 09/2019–02/2024"></div>
         </div>
       </div>
@@ -370,7 +375,7 @@
     <div class="job">
       <div class="job-meta">
         <div class="status past"><i></i>PAST</div>
-        09/2023 – 02/2024<br>Maassluis, NL
+        09/2023 – 10/2024<br>Maassluis, NL
       </div>
       <div>
         <div class="job-title">Software Engineer</div>
@@ -557,11 +562,11 @@
     <div class="grid2">
       <div>
         <div class="modules">
+          <div class="module highlight"><i></i>TypeScript</div>
           <div class="module"><i></i>Vue.js</div>
           <div class="module"><i></i>Quasar</div>
           <div class="module"><i></i>Golang</div>
           <div class="module"><i></i>JavaScript</div>
-          <div class="module"><i></i>TypeScript</div>
           <div class="module"><i></i>Python</div>
           <div class="module"><i></i>PHP / Laravel</div>
           <div class="module"><i></i>C#</div>
@@ -593,7 +598,7 @@
         <div class="edu-item">
           <div class="degree">Business Informatics, Finance &amp; HRM</div>
           <div class="school">Humber College, Toronto, CA — semester abroad</div>
-          <div class="when">01/2019 – 05/2022</div>
+          <div class="when">01/2022 – 05/2022</div>
         </div>
       </div>
     </div>
